@@ -15,3 +15,10 @@
 .bg-gradient-brand {
   background-image: var(--gradient-brand);
 }
+
+.hover-gradient:hover {
+  background-image: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
