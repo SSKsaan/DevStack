@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
 import YourStack from './YourStack'
 
 const badgeColors = {
@@ -58,8 +59,8 @@ function TechCard({ tech, added, onAdd }) {
       </div>
 
       <button
-        onClick={() => onAdd(tech)}
-        disabled={added}
+        onClick={() => (added ? toast.error(`${tech.name} is already in your stack`) : onAdd(tech))}
+        aria-disabled={added}
         className={`mt-auto w-full rounded-lg py-2 text-[11px] font-semibold transition ${
           added
             ? 'cursor-not-allowed bg-slate-900 text-white'
