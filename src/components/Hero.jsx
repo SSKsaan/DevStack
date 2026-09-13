@@ -1,15 +1,15 @@
 function HeroArt() {
   return (
     <div className="flex justify-center lg:flex-1 lg:justify-end" aria-hidden="true">
-      <img src="/banner-stack.png" alt="" className="w-72 sm:w-80 lg:w-[30rem]" />
+      <img src="/banner-stack.png" alt="" className="w-80 sm:w-96 lg:w-full" />
     </div>
   )
 }
 
 function Hero() {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-10 lg:flex-row lg:gap-16 lg:px-8 lg:py-16">
-      <div className="text-center lg:w-1/2 lg:text-left">
+    <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-10 lg:flex-row lg:gap-12 lg:px-8 lg:py-16">
+      <div className="text-center lg:w-[45%] lg:text-left">
         <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
           Build your ideal
           <span className="block text-gradient">Development Stack</span>
@@ -18,7 +18,7 @@ function Hero() {
           Explore frontend, backend, database, and tooling options, compare them side by side, and
           build the perfect technology stack for your next project.
         </p>
-        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+        <div className="mt-8 flex items-center gap-3 sm:justify-center lg:justify-start">
           <a href="#" className="w-full rounded-full bg-gradient-brand px-6 py-3 text-center text-sm font-semibold text-white shadow-sm hover:brightness-110 sm:w-auto">
             Explore Technologies
           </a>

@@ -29,30 +29,32 @@ function TechCard({ tech, added, onAdd }) {
 
   return (
     <article
-      className={`flex h-full flex-col rounded-2xl border border-slate-200 p-4 shadow-sm ${
-        added ? 'bg-slate-100 opacity-60' : 'bg-white'
+      className={`flex h-full flex-col rounded-2xl border border-slate-200 p-5 shadow-sm ${
+        added
+          ? 'bg-slate-100 opacity-60'
+          : 'card-gradient bg-white hover:-translate-y-0.5'
       }`}
     >
       <div className="flex items-start justify-between">
-        <img src={tech.icon} alt="" className={`h-9 w-9 ${added ? 'grayscale' : ''}`} />
+        <img src={tech.icon} alt="" className={`h-10 w-10 ${added ? 'grayscale' : ''}`} />
         {tech.badge ? (
-          <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${badgeClass}`}>
+          <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${badgeClass}`}>
             {tech.badge}
           </span>
         ) : null}
       </div>
 
-      <h3 className="mt-3 text-[15px] font-bold text-slate-900">{tech.name}</h3>
-      <p className="mt-1 text-xs leading-relaxed text-slate-500">{tech.description}</p>
+      <h3 className="mt-4 text-lg font-bold text-slate-900">{tech.name}</h3>
+      <p className="mt-1.5 text-sm leading-relaxed text-slate-500">{tech.description}</p>
 
-      <hr className="my-3 border-slate-200" />
+      <hr className="my-4 border-slate-200" />
 
-      <div className="mb-3 flex items-center justify-between text-sm">
-        <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] font-medium text-slate-600">
+      <div className="mb-4 flex items-center justify-between text-sm">
+        <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
           {tech.category}
         </span>
-        <span className="text-[10px] text-slate-500">{tech.difficulty}</span>
-        <span className="flex items-center gap-1 text-[11px] font-medium text-slate-700">
+        <span className="text-xs text-slate-500">{tech.difficulty}</span>
+        <span className="flex items-center gap-1 text-sm font-medium text-slate-700">
           <StarIcon />
           {tech.rating}
         </span>
@@ -61,7 +63,7 @@ function TechCard({ tech, added, onAdd }) {
       <button
         onClick={() => (added ? toast.error(`${tech.name} is already in your stack`) : onAdd(tech))}
         aria-disabled={added}
-        className={`mt-auto w-full rounded-lg py-2 text-[11px] font-semibold transition ${
+        className={`mt-auto w-full rounded-lg py-2.5 text-sm font-semibold transition ${
           added
             ? 'cursor-not-allowed bg-slate-900 text-white'
             : 'bg-gradient-brand text-white hover:brightness-110'

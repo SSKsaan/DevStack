@@ -31,14 +31,14 @@ function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <button className="text-sm text-slate-700 hover:text-slate-900">Sign In</button>
-          <button className="rounded-full bg-gradient-brand px-4 py-1.5 text-sm font-semibold text-white shadow-sm hover:brightness-110">Sign Up</button>
+          <button className="hover-gradient text-sm text-slate-700">Sign In</button>
+          <button className="rounded-full bg-gradient-brand px-4 py-1.5 text-sm font-semibold text-white shadow-sm hover:brightness-110 hover:shadow-lg hover:shadow-indigo-200">Sign Up</button>
         </div>
       </div>
 
       {/* Mobile */}
       <div className="flex h-14 items-center justify-between px-4 md:hidden">
-        <button onClick={() => setOpen(!open)} className="p-1" aria-label="Toggle menu">
+        <button onClick={() => setOpen(!open)} className="hover-bg-gradient rounded-lg p-1 transition" aria-label="Toggle menu">
           {open ? (
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} className="h-6 w-6 text-slate-800">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -57,8 +57,8 @@ function Navbar() {
           </span>
         </a>
         <div className="flex items-center gap-2">
-          <button className="text-xs text-slate-700">Sign In</button>
-          <button className="rounded-full bg-gradient-brand px-3 py-1 text-xs font-semibold text-white">Sign Up</button>
+          <button className="hover-gradient text-xs text-slate-700">Sign In</button>
+          <button className="rounded-full bg-gradient-brand px-3 py-1 text-xs font-semibold text-white hover:brightness-110 hover:shadow-lg hover:shadow-indigo-200">Sign Up</button>
         </div>
       </div>
 
