@@ -88,7 +88,7 @@ function Technologies({ stack, onAdd, onRemove, onRemoveAll }) {
   }, [])
 
   return (
-    <section id="technologies" className="mx-auto max-w-7xl px-4 pb-16 pt-4">
+    <section id="technologies" className="mx-auto max-w-7xl px-4 pb-28 pt-4">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
           Explore the <span className="text-gradient">Technologies</span>

@@ -16,6 +16,10 @@
   background-image: var(--gradient-brand);
 }
 
+.bg-footer-tint {
+  background-image: linear-gradient(135deg, #e0e7ff, #ede9fe);
+}
+
 .hover-gradient:hover {
   background-image: var(--gradient-brand);
   -webkit-background-clip: text;

@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Technologies from './components/Technologies'
+import Footer from './components/Footer'
 
 function App() {
   const [stack, setStack] = useState([])
@@ -40,6 +41,7 @@ function App() {
           onRemoveAll={clearStack}
         />
       </main>
+      <Footer />
       <ToastContainer position="bottom-right" autoClose={2500} />
     </div>
   )
