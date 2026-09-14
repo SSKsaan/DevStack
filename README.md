@@ -12,6 +12,7 @@ A clean, interactive SPA where developers explore modern technologies and build 
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-06B6D4?logo=tailwindcss&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/DaisyUI_5-5A0EF8?logo=daisyui&logoColor=white)
+[![Live](https://img.shields.io/badge/Live_Demo-devstackbuilder.vercel.app-8B5CF6?style=flat-square)](https://devstackbuilder.vercel.app/)
 
 ---
 
@@ -60,7 +61,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:5173](http://localhost:5173) in your browser, or check out the live version at [devstackbuilder.vercel.app](https://devstackbuilder.vercel.app/).
 
 ---
 

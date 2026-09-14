@@ -11,7 +11,7 @@ function YourStack({ stack, onRemove, onRemoveAll }) {
     stack.length === 1 ? '1 Technology Selected' : `${stack.length} Technologies Selected`
 
   return (
-    <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:w-64 lg:shrink-0">
+    <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm lg:w-64 lg:shrink-0 lg:self-start">
       <h3 className="text-lg font-bold text-slate-900">Your Stack</h3>
       <p className="mt-1 text-sm text-slate-500">
         {stack.length === 0 ? 'No technologies selected yet.' : label}

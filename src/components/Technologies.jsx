@@ -18,7 +18,7 @@ const badgeColors = {
 
 function StarIcon() {
   return (
-    <svg viewBox="0 0 20 20" className="h-4 w-4 fill-amber-400">
+    <svg viewBox="0 0 20 20" className="h-4 w-4 fill-amber-400 lg:h-3 lg:w-3 xl:h-4 xl:w-4">
       <path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z" />
     </svg>
   )
@@ -45,16 +45,16 @@ function TechCard({ tech, added, onAdd }) {
       </div>
 
       <h3 className="mt-4 text-lg font-bold text-slate-900">{tech.name}</h3>
-      <p className="mt-1.5 text-sm leading-relaxed text-slate-500">{tech.description}</p>
+      <p className="mt-1.5 flex-1 text-sm leading-relaxed text-slate-500">{tech.description}</p>
 
       <hr className="my-4 border-slate-200" />
 
       <div className="mb-4 flex items-center justify-between text-sm">
-        <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+        <span className="overflow-hidden rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 sm:min-w-0 lg:px-2 lg:text-[11px] lg:py-0.5 xl:px-2.5 xl:text-xs xl:py-1">
           {tech.category}
         </span>
-        <span className="text-xs text-slate-500">{tech.difficulty}</span>
-        <span className="flex items-center gap-1 text-sm font-medium text-slate-700">
+        <span className="whitespace-nowrap text-xs text-slate-500 lg:text-[11px] xl:text-xs">{tech.difficulty}</span>
+        <span className="flex items-center gap-1 text-sm font-medium text-slate-700 lg:gap-0.5 lg:text-[11px] xl:gap-1 xl:text-xs">
           <StarIcon />
           {tech.rating}
         </span>
@@ -63,7 +63,7 @@ function TechCard({ tech, added, onAdd }) {
       <button
         onClick={() => (added ? toast.error(`${tech.name} is already in your stack`) : onAdd(tech))}
         aria-disabled={added}
-        className={`mt-auto w-full rounded-lg py-2.5 text-sm font-semibold transition ${
+        className={`w-full rounded-lg py-2.5 text-sm font-semibold transition ${
           added
             ? 'cursor-not-allowed bg-slate-900 text-white'
             : 'bg-gradient-brand text-white hover:brightness-110'

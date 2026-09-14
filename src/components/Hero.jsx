@@ -1,14 +1,17 @@
 function HeroArt() {
   return (
-    <div className="flex justify-center lg:flex-1 lg:justify-end" aria-hidden="true">
-      <img src="/banner-stack.png" alt="" className="w-80 sm:w-96 lg:w-full" />
+    <div
+      className="-mx-4 flex justify-center overflow-hidden sm:-mx-6 lg:mx-0 lg:overflow-visible lg:flex-1 lg:justify-end"
+      aria-hidden="true"
+    >
+      <img src="/banner-stack.png" alt="" className="w-[140%] sm:w-[120%] max-w-none lg:w-full" />
     </div>
   )
 }
 
 function Hero() {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-10 lg:flex-row lg:gap-12 lg:px-8 lg:py-16">
+    <section className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-10 lg:flex-row lg:gap-12 lg:px-8 lg:py-16">
       <div className="text-center lg:w-[45%] lg:text-left">
         <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
           Build your ideal
